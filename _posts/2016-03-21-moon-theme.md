@@ -1,160 +1,83 @@
 ---
 layout: post
-title:  "Moon Jekyll Theme"
-date:   2016-04-06
-excerpt: "Minimal, one column Jekyll theme for your blog."
+title:  "HRTOS的使用方法"
+date:   2018-11-06
+excerpt: "HRTOS, 只因有你，所有伟大！."
 project: true
 tag:
-- jekyll 
-- moon
-- blog
-- about
-- theme
+- 使用 
+- 工程
+- 建立
+- HRTOS
 comments: true
 ---
 
-![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
+![HRTOS](https://www.hrtos.com/TS/HRTOS.png)    
     
-<center><b>Moon</b> is a minimal, one column jekyll theme.</center>
+<center><b>Hrtos</b>的使用步骤.</center>
      
- I'm not a developer or designer. And I don't add footer to show who did this theme. If you like this theme or using it, please give a **star** for motivation, It makes me happy.
+ 下载了HRTOS最新版之后是不是很期待用一下呢？本文将介绍如何建立基于HRTOS的工程项目，使用前请确保正确安装了相应的编译器，默认为KEIL 4.我们就按KEIL为平台进行讲解。
 
 <iframe src="https://ghbtns.com/github-btn.html?user=TaylanTatli&repo=Moon&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>    
       
-## Installation
-* Fork the [Moon repo](https://github.com/TaylanTatli/Moon/fork)
-* Edit `_config.yml` file.
-* Remove sample posts from `_posts` folder and add yours.
-* Edit `index.md` file in `about` folder.
-* Change repo name to `YourUserName.github.io`    
+## 获取最新版HRTOS
+* 方法1： [点击HRTOS](https://www.hrtos.com/download/HRTOS V2.30.rar)
+
+* 方法2： 加入QQ群：523549975
+
+* 方法3： 添加作者QQ：192444320（权威）   
      
-That's all.
+就这样！
 
-## Preview
+## 创建工程
 
+# 1.解压文件
+
+# 2.右键keil图标，选择打开文件所在位置，选择上一层后打开C51文件夹
 {% capture images %}
-	https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-	https://cloud.githubusercontent.com/assets/754514/14509717/61ad05ae-01d6-11e6-85ae-5a817dd8763b.png
-	https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png
+	https://www.hrtos.com/TS/1.png
+	https://www.hrtos.com/TS/2.png
+	https://www.hrtos.com/TS/3.png
 {% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=3 %}
+{% include gallery images=images caption="分别将解压包目录下的INCLUDE文件夹下的文件和LIB文件夹下的文件复制到INC和LIB目录下" cols=3 %}
 
 ---
-
+# 3.打开KEIL，新建一个工程。
+    *启动后选择Project->New uVision project... 弹出会话框
+    *给工程取好名字之后，选择保存或者回车
+    *自动出现芯片选择会话框，选择合适的芯片，右侧出现该芯片的配置情况
+    *选择好之后点击OK
+    *之后询问我们是否将8051通用的文件添加到我们的工程下，这里我们选择 否（N）
 {% capture images %}
-	https://cloud.githubusercontent.com/assets/754514/14509718/61b09a20-01d6-11e6-8da1-4202ae4d83cd.png
-	https://cloud.githubusercontent.com/assets/754514/14509715/61aa9d00-01d6-11e6-81a6-c6837edf2e84.png
+	https://www.hrtos.com/TS/5.png
+	https://www.hrtos.com/TS/6.png
+    https://www.hrtos.com/TS/7.png
+    https://www.hrtos.com/TS/8.png
 {% endcapture %}
-{% include gallery images=images caption="Moon Theme on Small Screen Size" cols=2 %}      
-      
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.      
+{% include gallery images=images caption="以上是建立工程的通用方法" cols=2 %}      
 
-## Site Setup
-A quick checklist of the files you’ll want to edit to get up and running.    
+# 4.配置工程
+    *查看是否弹出Project和Build Output
+    *没有弹出按下图2所示图标选择相应控件
+    *点击图3所示图标，弹出对话框如图4所示
+    *修改Memory Model选择第二个，如图5所示
+    *选择Output栏，选中Create HEX File，如图6所示
+    
+{% capture images %}
+	https://www.hrtos.com/TS/10.png
+	https://www.hrtos.com/TS/11.png
+    https://www.hrtos.com/TS/12.png
+    https://www.hrtos.com/TS/13.png
+    https://www.hrtos.com/TS/15.png
+    https://www.hrtos.com/TS/16.png
+{% endcapture %}
+{% include gallery images=images caption="以上是配置工程的方法" cols=2 %}   
 
-### Site Wide Configuration
-`_config.yml` is your friend. Open it up and personalize it. Most variables are self explanatory but here's an explanation of each if needed:
+# 5.在工程中添加相关的文件
 
-#### title
+# 6.编译、链接
 
-The title of your site... shocker!
+# 7.下载到51单片机
 
-Example `title: My Awesome Site`
-
-#### bio
-
-The description to show on your homepage.
-
-#### description
-
-The description to use for meta tags and navigation menu.
-
-#### url
-
-Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for generating canonical URLs in `<head>`. When developing locally either comment this out or use something like `http://localhost:4000` so all assets load properly. *Don't include a trailing `/`*.
-
-Examples:
-
-{% highlight yaml %}
-url: http://taylantatli.me/Moon
-url: http://localhost:4000
-url: //cooldude.github.io
-url:
-{% endhighlight %}
-
-#### reading_time
-
-Set true to show reading time for posts. And set `words_per_minute`, default is 200.
-
-#### logo
-Your site's logo. It will show on homepage and navigation menu. Also used for twitter meta tags.
-
-#### background
-Image for background. If you don't set it, color will be used as a background.
-
-#### Google Analytics and Webmaster Tools
-
-Google Analytics UA and Webmaster Tool verification tags can be entered in `_config.yml`. For more information on obtaining these meta tags check [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownership) support.
-
-#### MathJax
-It's enabled. But if you don't want to use it. Set it false in  `_config.yml`.
-
-#### Disqus Comments
-Set your disqus shortname in `_config.yml` to use comments.
-
----
-
-### Navigation Links
-
-To set what links appear in the top navigation edit `_data/navigation.yml`. Use the following format to set the URL and title for as many links as you'd like. *External links will open in a new window.*
-
-{% highlight yaml %}
-- title: Home
-  url: /
-
-- title: Blog
-  url: /blog/
-
-- title: Projects
-  url: /projects/
-
-- title: About
-  url: /about/
-
-- title: Moon
-  url: http://taylantatli.me/Moon
-{% endhighlight %}
-
----
-
-## Layouts and Content
-
-Moon Theme use [Jekyll Compress](https://github.com/penibelst/jekyll-compress-html) to compress html output. But it can cause errors if you use "linenos" (line numbers). I suggest don't use line numbers for codes, because it won't look good with this theme, also i didn't give a proper style for them. If you insist to use line numbers, just remove `layout: compress` string from layouts. It will disable compressing.
-
-### Feature Image
-
-You can set feature image per post. Just add `feature: some link` to your post's front matter.
-
-```
-feature: /assets/img/some-image.png
-or
-feaure: http://example.com/some-image.png
-```    
- This also will be used for twitter card:
-
-![Moon Twitter Card](https://cloud.githubusercontent.com/assets/754514/14509719/61c5751c-01d6-11e6-8c29-ce8ccad149bf.png)
-
-### Comments
-To show disqus comments for your post add `comments: true` to your post's front matter.
-
----
-
-## Questions?
-
-Found a bug or aren't quite sure how something works? By all means [file a GitHub Issue](https://github.com/TaylanTatli/Moon/issues/new). And if you make something cool with this theme feel free to let me know.
-
----
-
-## License
-
-This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.
+## 还有其他问题？
+ 欢迎加QQ群与大家交流！！！
