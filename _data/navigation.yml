@@ -1,3 +1,5 @@
 # Site navigation links
-- title: Projects
+- title: 说明
   url: /projects/
+- title: 帖子
+  url: /posts/
