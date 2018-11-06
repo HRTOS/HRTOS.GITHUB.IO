@@ -15,7 +15,7 @@ comments: true
 ![HRTOS](https://www.hrtos.com/ts/HRTOS.png)    
     
 
-###  Hrtos的使用步骤
+##  HRTOS的使用步骤
  下载了HRTOS最新版之后是不是很期待用一下呢？本文将介绍如何建立基于HRTOS的工程项目，使用前请确保正确安装了相应的编译器，默认为KEIL 4.我们就按KEIL为平台进行讲解。
 
 <iframe src="https://ghbtns.com/github-btn.html?user=TaylanTatli&repo=Moon&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>    
@@ -31,9 +31,9 @@ comments: true
 
 ## 创建工程
 
-# 1.解压文件
+### 1.解压文件
 
-# 2.右键keil图标，选择打开文件所在位置，选择上一层后打开C51文件夹
+### 2.右键keil图标，选择打开文件所在位置，选择上一层后打开C51文件夹
 {% capture images %}
 	https://www.hrtos.com/ts/1.png
 	https://www.hrtos.com/ts/2.png
@@ -42,7 +42,7 @@ comments: true
 {% include gallery images=images caption="分别将解压包目录下的INCLUDE文件夹下的文件和LIB文件夹下的文件复制到INC和LIB目录下" cols=3 %}
 
 ---
-# 3.打开KEIL，新建一个工程。
+### 3.打开KEIL，新建一个工程。
     *启动后选择Project->New uVision project... 弹出会话框
     *给工程取好名字之后，选择保存或者回车
     *自动出现芯片选择会话框，选择合适的芯片，右侧出现该芯片的配置情况
@@ -56,7 +56,7 @@ comments: true
 {% endcapture %}
 {% include gallery images=images caption="以上是建立工程的通用方法" cols=4 %}      
 
-# 4.配置工程
+### 4.配置工程
     *查看是否弹出Project和Build Output
     *没有弹出按下图2所示图标选择相应控件
     *点击图3所示图标，弹出对话框如图4所示
@@ -73,11 +73,11 @@ comments: true
 {% endcapture %}
 {% include gallery images=images caption="以上是配置工程的方法" cols=6 %}   
 
-# 5.在工程中添加相关的文件
+### 5.在工程中添加相关的文件
   注意手动添加HRTOS.LIB到工程。
-# 6.编译、链接
+### 6.编译、链接
 
-# 7.下载到51单片机
+### 7.下载到51单片机
 
 ## 还有其他问题？
  欢迎加QQ群与大家交流！！！
