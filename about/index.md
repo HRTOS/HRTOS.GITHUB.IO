@@ -8,7 +8,7 @@ comments: false
     
 <center><a href="http://www.hrtos.com"><b>HRTOS</b></a> 是一款基于8051系列单片机的系统内核，本着精简、高效的开发理念。HRTOS自2017年7月29日完成以来，经过不断的充实完善，现已形成成熟稳定操作系统，系统全部由 谭舒 编写开发，集合多位功能于一身。HRTOS因您而伟大！</center>
 
-## 功能
+## 主要功能
 * 任务管理
 * 定时器管理
 * 资源管理
@@ -27,6 +27,8 @@ comments: false
     https://www.hrtos.com/ts/zhifubao.png
 {% endcapture %}
 {% include gallery images=images caption="您的支持是HRTOS不竭的动力！" cols=2 %}
+
+## 下载
 
 获取最新版本 [请点击这里](https://WWW.HRTOS.COM/download/HRTOS V2.30.rar) ,如需帮助请联系QQ:192444320，谢谢！.
 
