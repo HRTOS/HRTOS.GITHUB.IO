@@ -12,7 +12,7 @@ tag:
 comments: true
 ---
 
-[HRTOS](https://www.hrtos.com/TS/HRTOS.png)    
+![HRTOS](https://www.hrtos.com/ts/HRTOS.png)    
     
 
 ###  Hrtos的使用步骤
@@ -35,9 +35,9 @@ comments: true
 
 # 2.右键keil图标，选择打开文件所在位置，选择上一层后打开C51文件夹
 {% capture images %}
-	https://www.hrtos.com/TS/1.png
-	https://www.hrtos.com/TS/2.png
-	https://www.hrtos.com/TS/3.png
+	https://www.hrtos.com/ts/1.png
+	https://www.hrtos.com/ts/2.png
+	https://www.hrtos.com/ts/3.png
 {% endcapture %}
 {% include gallery images=images caption="分别将解压包目录下的INCLUDE文件夹下的文件和LIB文件夹下的文件复制到INC和LIB目录下" cols=3 %}
 
@@ -49,10 +49,10 @@ comments: true
     *选择好之后点击OK
     *之后询问我们是否将8051通用的文件添加到我们的工程下，这里我们选择 否（N）
 {% capture images %}
-	https://www.hrtos.com/TS/5.png
-	https://www.hrtos.com/TS/6.png
-    https://www.hrtos.com/TS/7.png
-    https://www.hrtos.com/TS/8.png
+	https://www.hrtos.com/ts/5.png
+	https://www.hrtos.com/ts/6.png
+    https://www.hrtos.com/ts/7.png
+    https://www.hrtos.com/ts/8.png
 {% endcapture %}
 {% include gallery images=images caption="以上是建立工程的通用方法" cols=4 %}      
 
@@ -64,12 +64,12 @@ comments: true
     *选择Output栏，选中Create HEX File，如图6所示
     
 {% capture images %}
-	https://www.hrtos.com/TS/10.png
-	https://www.hrtos.com/TS/11.png
-    https://www.hrtos.com/TS/12.png
-    https://www.hrtos.com/TS/13.png
-    https://www.hrtos.com/TS/15.png
-    https://www.hrtos.com/TS/16.png
+	https://www.hrtos.com/ts/10.png
+	https://www.hrtos.com/ts/11.png
+    https://www.hrtos.com/ts/12.png
+    https://www.hrtos.com/ts/13.png
+    https://www.hrtos.com/ts/15.png
+    https://www.hrtos.com/ts/16.png
 {% endcapture %}
 {% include gallery images=images caption="以上是配置工程的方法" cols=6 %}   
 
