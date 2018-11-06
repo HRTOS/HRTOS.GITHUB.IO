@@ -7,7 +7,7 @@ words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
+locale:             en_CN
 url:                http://WWW.HRTOS.COM
 
 # Jekyll
@@ -38,7 +38,7 @@ disqus_shortname:   taylantatli
   #ad-slot:
 #bing-verify:
 #email:
-#twitter:           192444320
+qq:           192444320
 #facebook:           username
 github-url:         HRTOS
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
