@@ -1,8 +1,6 @@
 # Site navigation links
 
-- title: 主页
-  url: /
-  
+
   - title: 介绍
   url: /about/
   
