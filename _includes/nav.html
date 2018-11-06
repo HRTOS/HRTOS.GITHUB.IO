@@ -6,13 +6,16 @@
 				<a href="#">介绍</a>
 				<ul class="dl-submenu">
 					<li>
-						<img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }} 照片" class="author-photo">
+						<img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }} photo" class="author-photo">
 						<h4>{{ site.title }}</h4>
 						<p>{{ site.description }}</p>
 					</li>
 					<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">Learn More</span></a></li>
 					{% if site.email %}<li>
                         <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+                    </li>{% endif %}
+                    {% if site.qq %}<li>
+                        <a href="http://qzone.qq.com/{{ site.qq }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-qq"></i> qq</a>
                     </li>{% endif %}
                     {% if site.twitter %}<li>
                         <a href="http://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
