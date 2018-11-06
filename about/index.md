@@ -30,8 +30,8 @@ comments: false
 
 获取最新版本 [请点击这里](https://WWW.HRTOS.COM/download/HRTOS V2.30.rar) ,如需帮助请联系QQ:192444320，谢谢！.
 
-## Getting Started
+[HRTOS](http://www.hrtos.com/){: .btn}
 
-To learn how to install and use this theme check out the [Setup Guide](http://www.hrtos.com/) for more information.
+©2017-2018 [HRTOS](http://www.hrtos.com/)所有权归 谭舒 所有 .
       
-[Install HRTOS](http://www.hrtos.com/){: .btn}
+
