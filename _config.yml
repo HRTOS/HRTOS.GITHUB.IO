@@ -1,7 +1,7 @@
 # Site
 title:              HRTOS
-bio:                'Hard real-time operating systems.'
-description:        "HRTOS是一个硬实时操作系统，希望可以为您带来便利"
+bio:                'HRTOS因您而伟大.'
+description:        "HRTOS是一款基于8051单片机的硬实时操作系统，获取更多内容，欢迎来到这里！"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
