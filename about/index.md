@@ -28,7 +28,7 @@ comments: false
 {% endcapture %}
 {% include gallery images=images caption="您的支持是HRTOS不竭的动力！" cols=2 %}
 
-See a [live version of HRTOS](http://WWW.HRTOS.COM) hosted on GitHub.
+获取最新版本 [请点击这里](https://WWW.HRTOS.COM/download/HRTOS V2.30.rar) ,如需帮助请联系QQ:192444320，谢谢！.
 
 ## Getting Started
 
