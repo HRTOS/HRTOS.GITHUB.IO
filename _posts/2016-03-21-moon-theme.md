@@ -54,7 +54,7 @@ comments: true
     https://www.hrtos.com/TS/7.png
     https://www.hrtos.com/TS/8.png
 {% endcapture %}
-{% include gallery images=images caption="以上是建立工程的通用方法" cols=2 %}      
+{% include gallery images=images caption="以上是建立工程的通用方法" cols=4 %}      
 
 # 4.配置工程
     *查看是否弹出Project和Build Output
@@ -71,7 +71,7 @@ comments: true
     https://www.hrtos.com/TS/15.png
     https://www.hrtos.com/TS/16.png
 {% endcapture %}
-{% include gallery images=images caption="以上是配置工程的方法" cols=2 %}   
+{% include gallery images=images caption="以上是配置工程的方法" cols=6 %}   
 
 # 5.在工程中添加相关的文件
   注意手动添加HRTOS.LIB到工程。
