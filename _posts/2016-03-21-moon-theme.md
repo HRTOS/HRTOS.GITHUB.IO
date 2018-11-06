@@ -12,10 +12,10 @@ tag:
 comments: true
 ---
 
-![HRTOS](https://www.hrtos.com/TS/HRTOS.png)    
+[HRTOS](https://www.hrtos.com/TS/HRTOS.png)    
     
-<center><b>Hrtos</b>的使用步骤.</center>
-     
+
+###  Hrtos的使用步骤
  下载了HRTOS最新版之后是不是很期待用一下呢？本文将介绍如何建立基于HRTOS的工程项目，使用前请确保正确安装了相应的编译器，默认为KEIL 4.我们就按KEIL为平台进行讲解。
 
 <iframe src="https://ghbtns.com/github-btn.html?user=TaylanTatli&repo=Moon&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>    
@@ -74,7 +74,7 @@ comments: true
 {% include gallery images=images caption="以上是配置工程的方法" cols=2 %}   
 
 # 5.在工程中添加相关的文件
-
+  注意手动添加HRTOS.LIB到工程。
 # 6.编译、链接
 
 # 7.下载到51单片机
